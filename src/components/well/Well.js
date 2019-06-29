@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "./Form";
+import Form from "./form/Form";
+import "./Well.scss";
 
 const Well = () => {
 	return (
-		<div className="border">
-			<h2 className="text-center">Well</h2>
+		<div className="well">
 			<Form />
 		</div>
 	);

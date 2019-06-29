@@ -5,6 +5,7 @@ import Profile from "./pages/user/Profile";
 import Settings from "./pages/user/Settings";
 import Logout from "./pages/user/Logout";
 import PageNotFound from "./pages/PageNotFound";
+import "./Main.scss";
 
 const Main = () => {
 	return (
