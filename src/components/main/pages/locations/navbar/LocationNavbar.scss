@@ -11,8 +11,14 @@
     padding: o;
     li {
       display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 16px 0;
       a {
         color: $black;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: -0.09px;
         &:hover {
           text-decoration: none;
           opacity: 0.6;

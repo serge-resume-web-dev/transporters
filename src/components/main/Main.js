@@ -8,7 +8,7 @@ import PageNotFound from "./pages/PageNotFound";
 
 const Main = () => {
 	return (
-		<section className="border">
+		<section className="main">
 			<Switch>
 				<Route
 					exact
