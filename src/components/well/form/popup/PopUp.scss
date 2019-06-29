@@ -25,6 +25,10 @@
   z-index: 2;
   .item {
     text-align: center;
+    .fa-exclamation-circle {
+      font-size: 96px;
+      color: red;
+    }
   }
   .button-close {
     text-align: right;
@@ -44,5 +48,6 @@
     font-size: 18px;
     line-height: 1.33;
     color: $black;
+    padding: 0 12px;
   }
 }

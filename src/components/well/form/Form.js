@@ -18,7 +18,11 @@ class Form extends Component {
 				value: "",
 				placeholder: "At least 4 character"
 			},
-			popup: false
+			popup: {
+				show: false,
+				success: false,
+				error: null
+			}
 		};
 
 		this.initState = this.state;
@@ -52,16 +56,16 @@ class Form extends Component {
 		};
 		const url =
 			"http://5d0f6dddc56e7600145a42a6.mockapi.io/api/v1/users-database";
-		console.log("Async post request form submit data: ", data);
+
 		this.postUserData(url, data)
 			.then(response => {
-				console.log(response);
-				this.showPopup();
+				this.showPopup("success");
 			})
-			.catch(error => console.error(error));
+			.catch(error => {
+				this.showPopup("error", error);
+			});
 
-		//when complete:
-		this.setState(this.initState);
+		this.resetHandler();
 	}
 
 	postUserData(url, data) {
@@ -80,19 +84,37 @@ class Form extends Component {
 		}).then(response => response.json()); // parses JSON response into native JavaScript objects
 	}
 
-	showPopup() {
-		this.setState({ popup: true });
+	showPopup(status, error = null) {
+		this.setState({
+			popup: {
+				show: true,
+				success: status === "success" ? true : false,
+				error
+			}
+		});
 	}
 
 	hidePopup() {
-		this.setState({ popup: false });
+		this.setState({
+			popup: {
+				show: false,
+				success: false,
+				error: null
+			}
+		});
 	}
 
 	render() {
 		const { email, phone, password, popup } = this.state;
 		return (
 			<React.Fragment>
-				{popup ? <PopUp hidePopup={this.hidePopup} /> : null}
+				{popup.show ? (
+					<PopUp
+						hidePopup={this.hidePopup}
+						success={popup.success}
+						error={popup.error}
+					/>
+				) : null}
 				<div className="form">
 					<h4 className="h4">Register now</h4>
 					<form onSubmit={this.submitHandler}>
