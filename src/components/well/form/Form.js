@@ -1,22 +1,44 @@
 import React, { Component } from "react";
 import PopUp from "./popup/PopUp";
+import validate from "./validator/validator";
 import "./Form.scss";
 
 class Form extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			email: {
-				value: "",
-				placeholder: "Your email address"
-			},
-			phone: {
-				value: "",
-				placeholder: "Your mobile number"
-			},
-			password: {
-				value: "",
-				placeholder: "At least 4 character"
+			formInputs: {
+				email: {
+					value: "",
+					placeholder: "Your email address",
+					valid: false,
+					touched: false,
+					rules: {
+						minLength: 5,
+						isRequired: true,
+						isEmail: true
+					}
+				},
+				phone: {
+					value: "",
+					placeholder: "Your mobile number",
+					valid: false,
+					touched: false,
+					rules: {
+						minLength: 8,
+						isNumerical: true
+					}
+				},
+				password: {
+					value: "",
+					placeholder: "At least 4 character",
+					valid: false,
+					touched: false,
+					rules: {
+						minLength: 4,
+						isRequired: true
+					}
+				}
 			},
 			popup: {
 				show: false,
@@ -36,10 +58,22 @@ class Form extends Component {
 	changeHandler(e) {
 		const name = e.target.name;
 		const value = e.target.value;
+
+		const updatedControls = {
+			...this.state.formInputs
+		};
+		const updatedFormElement = {
+			...updatedControls[name]
+		};
+
+		updatedFormElement.value = value;
+		updatedFormElement.touched = true;
+		updatedFormElement.valid = validate(value, updatedFormElement.rules);
+
+		updatedControls[name] = updatedFormElement;
+
 		this.setState({
-			[name]: {
-				value
-			}
+			formInputs: updatedControls
 		});
 	}
 
@@ -50,9 +84,9 @@ class Form extends Component {
 	submitHandler(e) {
 		e.preventDefault();
 		const data = {
-			email: this.state.email.value,
-			phone: this.state.phone.value,
-			password: this.state.password.value
+			email: this.state.formInputs.email.value,
+			phone: this.state.formInputs.phone.value,
+			password: this.state.formInputs.password.value
 		};
 		const url =
 			"http://5d0f6dddc56e7600145a42a6.mockapi.io/api/v1/users-database";
@@ -105,7 +139,8 @@ class Form extends Component {
 	}
 
 	render() {
-		const { email, phone, password, popup } = this.state;
+		const { email, phone, password } = this.state.formInputs;
+		const { popup } = this.state;
 		return (
 			<React.Fragment>
 				{popup.show ? (
@@ -128,7 +163,11 @@ class Form extends Component {
 								value={email.value}
 								onChange={this.changeHandler}
 							/>
-							<span className="error" />
+							<span className="error">
+								{email.touched && !email.valid
+									? "please, enter a valid email"
+									: null}
+							</span>
 						</label>
 						<label htmlFor="phone">
 							Phone number
@@ -140,7 +179,11 @@ class Form extends Component {
 								value={phone.value}
 								onChange={this.changeHandler}
 							/>
-							<span className="error" />
+							<span className="error">
+								{phone.touched && !phone.valid
+									? "please, enter a valid number, eg. 25 266 345"
+									: null}
+							</span>
 						</label>
 						<label htmlFor="password">
 							Password
@@ -152,10 +195,18 @@ class Form extends Component {
 								value={password.value}
 								onChange={this.changeHandler}
 							/>
-							<span className="error" />
+							<span className="error">
+								{password.touched && !password.valid
+									? "minimum 4 charachters long"
+									: null}
+							</span>
 						</label>
 						<div className="buttons">
-							<input type="submit" value="Send" />
+							<input
+								type="submit"
+								value="Send"
+								disabled={!email.valid && !password.valid}
+							/>
 							<input type="reset" value="Reset" onClick={this.resetHandler} />
 						</div>
 					</form>
