@@ -1,0 +1,48 @@
+@import "./../../styles/functions";
+@import "./../../styles/variables";
+@import "./../../styles/mixins";
+
+.btn-dropdown {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  .btn-dropdown-button {
+    cursor: pointer;
+    p {
+      min-width: 109px;
+      height: 24px;
+      opacity: 0.6;
+      line-height: 1.33;
+      letter-spacing: -0.09px;
+      text-align: right;
+      .fa {
+        font-size: 14px;
+        color: $black;
+        margin: 0 5px;
+      }
+    }
+  }
+  .btn-dropdown-dropdown {
+    width: 175px;
+    min-height: 154px;
+    border-radius: 4px;
+    box-shadow: 0 16px 24px 0 rgba(17, 17, 17, 0.2);
+    background-color: $white;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 15px 0 16px;
+      li {
+        display: block;
+        a {
+          color: $black;
+          font-weight: bold;
+          &:hover {
+            text-decoration: none;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

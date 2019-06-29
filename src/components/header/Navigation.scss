@@ -3,10 +3,11 @@
 @import "./../styles/mixins";
 
 .navigation-top {
-	height: 84px;
-	display: flex;
-	justify-content: space-around;
-	.nav-button {
-		margin-left: auto;
-	}
+  height: 84px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 24px;
+  .nav-button {
+    margin-left: auto;
+  }
 }
