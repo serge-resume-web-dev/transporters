@@ -1,0 +1,12 @@
+@import "./../styles/functions";
+@import "./../styles/variables";
+@import "./../styles/mixins";
+
+.navigation-top {
+	height: 84px;
+	display: flex;
+	justify-content: space-around;
+	.nav-button {
+		margin-left: auto;
+	}
+}

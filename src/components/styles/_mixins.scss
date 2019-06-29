@@ -1,0 +1,70 @@
+
+@mixin small-xs-screens{
+    @media only screen and(max-width: 480px) {
+        @content;
+    }
+}
+@mixin xs-screens{
+    @media only screen and(max-width: 768px) {
+        @content;
+    }
+}
+@mixin sm-screens{
+    @media only screen and(max-width: 992px) {
+        @content;
+    }
+}
+@mixin md-screens{
+    @media only screen and(max-width: 1200px) {
+        @content;
+    }
+}
+@mixin md-screens-plus{
+    @media only screen and(min-width: 1201px) {
+        @content;
+    }
+}
+@mixin lg-screens{
+    @media only screen and(max-width: 1440px) {
+        @content;
+    }
+}
+@mixin mid-lg-screens{
+    @media only screen and(max-width: 1800px) {
+        @content;
+    }
+}
+@mixin big-lg-screens{
+    @media only screen and(max-width: 2200px) {
+        @content;
+    }
+}
+
+@mixin xlg-screens {
+    @media only screen and(max-width: 2570px) {
+        @content;
+    }
+}
+
+// border overlay mixin for image containers:
+// container div must have set position relative:
+@mixin  border-inset-overlay {
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1px; bottom: 1px; left: 1px; right: 1px;
+        box-shadow: 0 3px 8px rgba(0 ,0, 0, 0.05);
+        border-radius: 4px;
+        z-index: -1;
+    }
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px; bottom: 0px; left: 0px; right: 0px;
+        border: 1px solid rgba(0 ,0, 0, 0.1);
+        border-radius: 4px;
+        box-shadow: inset 0 0 1px rgba(255 , 255, 255, 0.5);
+    }
+}
