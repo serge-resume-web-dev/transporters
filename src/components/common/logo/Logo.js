@@ -6,7 +6,7 @@ import logo from "./../../../img/logo.png";
 const Logo = () => {
 	return (
 		<Link to="/" className="logo">
-			<img src={logo} alt="logo image Transporters" />
+			<img src={logo} alt="logo Transporters" />
 			<span>Transporters</span>
 		</Link>
 	);

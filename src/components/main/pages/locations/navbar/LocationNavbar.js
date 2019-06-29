@@ -1,10 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import "./LocationNavbar.scss";
 
-const LocationNavbar = () => {
+const LocationNavbar = ({ locations }) => {
 	return (
 		<div className="location-navbar">
 			<nav>
-				<h3>Location Navbar</h3>
+				<ul>
+					{locations.map((location, index) => (
+						<li key={location.heading}>
+							<NavLink to={`/location/${location.heading.toLowerCase()}`}>
+								{location.heading}
+							</NavLink>
+						</li>
+					))}
+				</ul>
 			</nav>
 		</div>
 	);

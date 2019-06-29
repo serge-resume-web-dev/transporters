@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 import Locations from "./pages/locations/Locations";
 import Profile from "./pages/user/Profile";
 import Settings from "./pages/user/Settings";
@@ -10,7 +10,12 @@ const Main = () => {
 	return (
 		<section className="border">
 			<Switch>
-				<Route exact path="/" component={Locations} />
+				<Route
+					exact
+					path="/"
+					render={() => <Redirect from="/" to="/location/amsterdam" />}
+				/>
+				<Route path="/location/:id" component={Locations} />
 				<Route path="/profile" component={Profile} />
 				<Route path="/settings" component={Settings} />
 				<Route path="/logout" component={Logout} />
