@@ -1,0 +1,48 @@
+@import "./../../../styles/functions";
+@import "./../../../styles/variables";
+@import "./../../../styles/mixins";
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.popup {
+  width: 414px;
+  height: 324px;
+  border-radius: 8px;
+  box-shadow: 0 16px 24px 0 rgba(17, 17, 17, 0.2);
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 222px;
+  left: 476px;
+  z-index: 2;
+  .item {
+    text-align: center;
+  }
+  .button-close {
+    text-align: right;
+    padding-right: 15px;
+    .fa {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: -0.12px;
+    color: $black;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.33;
+    color: $black;
+  }
+}
