@@ -1,0 +1,10 @@
+@import "./../styles/functions";
+@import "./../styles/variables";
+@import "./../styles/mixins";
+
+.intro {
+  height: 643px;
+  background-image: url("./../../img/cargo.jpg");
+  border-radius: 6px;
+  margin-bottom: 40px;
+}

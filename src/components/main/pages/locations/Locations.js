@@ -1,10 +1,11 @@
 import React from "react";
-import LocationArticle from "./LocationArticle";
-import LocationNavbar from "./LocationNavbar";
+import LocationArticle from "./article/LocationArticle";
+import LocationNavbar from "./navbar/LocationNavbar";
+import "./Locations.scss";
 
 const Locations = () => {
 	return (
-		<div>
+		<div className="locations flex-container">
 			<LocationArticle />
 			<LocationNavbar />
 		</div>

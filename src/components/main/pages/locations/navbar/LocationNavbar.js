@@ -2,7 +2,7 @@ import React from "react";
 
 const LocationNavbar = () => {
 	return (
-		<div className="border">
+		<div className="location-navbar">
 			<nav>
 				<h3>Location Navbar</h3>
 			</nav>

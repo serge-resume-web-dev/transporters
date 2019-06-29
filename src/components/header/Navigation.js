@@ -6,10 +6,10 @@ import "./Navigation.scss";
 const Navigation = () => {
 	return (
 		<nav className="navigation-top">
-			<div className="logo border">
+			<div className="logo">
 				<Logo />
 			</div>
-			<div className="nav-button border">
+			<div className="nav-button">
 				<DropButton name="Julia Wozniak" />
 			</div>
 		</nav>

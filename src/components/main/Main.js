@@ -9,7 +9,6 @@ import PageNotFound from "./pages/PageNotFound";
 const Main = () => {
 	return (
 		<section className="border">
-			<h2 className="text-center">Main</h2>
 			<Switch>
 				<Route exact path="/" component={Locations} />
 				<Route path="/profile" component={Profile} />

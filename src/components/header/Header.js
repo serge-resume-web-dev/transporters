@@ -4,7 +4,7 @@ import Intro from "./Intro";
 
 const Header = () => {
 	return (
-		<header className="border">
+		<header className="header">
 			<Navigation />
 			<Intro />
 		</header>

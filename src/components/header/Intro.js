@@ -1,11 +1,8 @@
 import React from "react";
+import "./Intro.scss";
 
 const Intro = () => {
-	return (
-		<div>
-			<h2 className="text-center">Intro img</h2>
-		</div>
-	);
+	return <div className="intro" />;
 };
 
 export default Intro;
