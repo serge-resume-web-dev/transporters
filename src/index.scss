@@ -1,6 +1,13 @@
+@import "./components/styles/functions";
+@import "./components/styles/variables";
+@import "./components/styles/mixins";
+
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
   font-size: 18px;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", sans-serif;
+  @include small-xs-screens {
+    font-size: 16px;
+  }
 }

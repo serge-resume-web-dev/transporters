@@ -2,23 +2,18 @@
 @import "./styles/variables";
 @import "./styles/mixins";
 
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-body {
-	font-size: 18px;
-	font-family: "Helvetica Neue", "Helvetica", "Roboto", sans-serif;
-}
-
 .wrapper {
-	max-width: 1366px;
-	// height: 1854px;
-	margin: 0 auto;
-	background-color: $white;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: $white;
 }
 .app {
-	padding: 0 40px;
+  padding: 0 40px;
+  @include small-xs-screens {
+    padding: 0;
+  }
 }
 
 .border {
-	border: 1px solid black;
+  border: 1px solid black;
 }

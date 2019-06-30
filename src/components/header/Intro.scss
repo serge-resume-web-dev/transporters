@@ -3,8 +3,30 @@
 @import "./../styles/mixins";
 
 .intro {
-  height: 643px;
+  min-height: 643px;
   background-image: url("./../../img/cargo.jpg");
+  background-size: cover;
   border-radius: 6px;
   margin-bottom: 40px;
+  @include md-screens {
+    min-height: 500px;
+    background-image: url("./../../img/cargo-md.jpg");
+  }
+
+  @include sm-screens {
+    min-height: 450px;
+  }
+  @include xs-screens {
+    min-height: 350px;
+  }
+
+  @include small-xs-screens {
+    min-height: 250px;
+    background-image: url("./../../img/cargo-sm.jpg");
+    border-radius: 0;
+    margin-bottom: 16px;
+  }
+  @include extra-small-xs-screens {
+    min-height: 160px;
+  }
 }

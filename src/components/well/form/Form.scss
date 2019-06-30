@@ -8,11 +8,20 @@
   border-radius: 8px;
   background-image: linear-gradient(130deg, $melon, $bubble-gum-pink);
   padding: 32px 40px 40px 40px;
+  @include small-xs-screens {
+    max-width: 288px;
+    max-height: 371px;
+    padding: 18px 16px;
+    margin: 0 auto;
+  }
   .h4 {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: -0.12px;
     color: $white;
+    @include small-xs-screens {
+      font-size: 18px;
+    }
   }
   form {
     label {
@@ -34,6 +43,14 @@
           font-size: 18px;
           line-height: 1.33;
           letter-spacing: -0.09px;
+          @include small-xs-screens {
+            font-size: 16px;
+          }
+        }
+        @include small-xs-screens {
+          width: 256px;
+          height: 40px;
+          padding: 9px 0 7px 12px;
         }
       }
       .error {

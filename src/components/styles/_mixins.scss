@@ -1,3 +1,9 @@
+@mixin extra-small-xs-screens {
+  @media only screen and(max-width: 365px) {
+    @content;
+  }
+}
+
 @mixin small-xs-screens {
   @media only screen and(max-width: 576px) {
     @content;

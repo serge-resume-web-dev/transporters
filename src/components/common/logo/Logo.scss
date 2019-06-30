@@ -16,6 +16,9 @@ a.logo {
     font-weight: bold;
     letter-spacing: -0.12px;
     margin-left: 12px;
+    @include small-xs-screens {
+      font-size: 18px;
+    }
   }
   &:hover {
     text-decoration: none;

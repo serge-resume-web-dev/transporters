@@ -1,7 +1,14 @@
+@import "./../styles/functions";
+@import "./../styles/variables";
+@import "./../styles/mixins";
+
 .footer {
   min-height: 116px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 24px;
+  @include small-xs-screens {
+    padding: 16px 16px 24px 16px;
+  }
   .flex-container {
     display: flex;
     justify-content: space-around;
