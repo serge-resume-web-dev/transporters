@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Settings = () => {
 	const [data, setData] = useState([]);
 	const url =
-		"http://5d0f6dddc56e7600145a42a6.mockapi.io/api/v1/users-database";
+		"https://5d0f6dddc56e7600145a42a6.mockapi.io/api/v1/users-database";
 
 	useEffect(() => {
 		async function fetchUsers() {

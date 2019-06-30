@@ -90,7 +90,7 @@ class Form extends Component {
 			password: this.state.formInputs.password.value
 		};
 		const url =
-			"http://5d0f6dddc56e7600145a42a6.mockapi.io/api/v1/users-database";
+			"https://5d0f6dddc56e7600145a42a6.mockapi.io/api/v1/users-database";
 
 		postUserData(url, data)
 			.then(response => {
