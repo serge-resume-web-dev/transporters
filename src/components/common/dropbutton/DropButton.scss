@@ -47,7 +47,12 @@
     box-shadow: 0 16px 24px 0 rgba(17, 17, 17, 0.2);
     background-color: $white;
     @include small-xs-screens {
+      position: absolute;
+      top: 46px;
+      left: 0;
+      right: 0;
       width: auto;
+      border-radius: 0;
     }
     ul {
       list-style: none;
@@ -63,6 +68,9 @@
           &:hover {
             text-decoration: none;
             opacity: 0.6;
+          }
+          @include small-xs-screens {
+            text-align: center;
           }
         }
       }

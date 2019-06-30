@@ -7,6 +7,10 @@
   display: flex;
   justify-content: space-around;
   padding-top: 38px;
+  @include small-xs-screens {
+    height: auto;
+    padding: 0;
+  }
   .nav-button {
     margin-left: auto;
     @include small-xs-screens {
@@ -15,6 +19,6 @@
   }
   div.logo-container-mobile {
     position: absolute;
-    top: 42px;
+    top: 12px;
   }
 }
