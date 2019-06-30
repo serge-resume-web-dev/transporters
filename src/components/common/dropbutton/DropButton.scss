@@ -6,9 +6,17 @@
   width: 175px;
   display: flex;
   flex-direction: column;
+  @include small-xs-screens {
+    width: auto;
+  }
   .btn-dropdown-button {
     cursor: pointer;
-    p {
+    @include small-xs-screens {
+      max-width: 50px;
+      align-self: flex-end;
+      padding: 0 16px;
+    }
+    .desktop-button {
       min-width: 109px;
       height: 24px;
       opacity: 0.6;
@@ -21,6 +29,13 @@
         margin: 0 5px;
       }
     }
+    .hamburger-button {
+      margin-top: 10px;
+      width: 16px;
+      height: 18px;
+      color: $black;
+      text-align: right;
+    }
   }
   .btn-dropdown-dropdown {
     width: 175px;
@@ -28,6 +43,9 @@
     border-radius: 4px;
     box-shadow: 0 16px 24px 0 rgba(17, 17, 17, 0.2);
     background-color: $white;
+    @include small-xs-screens {
+      width: auto;
+    }
     ul {
       list-style: none;
       margin: 0;

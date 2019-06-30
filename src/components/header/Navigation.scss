@@ -9,5 +9,12 @@
   padding-top: 38px;
   .nav-button {
     margin-left: auto;
+    @include small-xs-screens {
+      width: 100%;
+    }
+  }
+  div.logo-container-mobile {
+    position: absolute;
+    top: 42px;
   }
 }

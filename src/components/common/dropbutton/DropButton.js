@@ -9,6 +9,7 @@ class DropButton extends Component {
 			open: false
 		};
 		this.clickHandler = this.clickHandler.bind(this);
+		this.mobileCloseAfterClick = this.mobileCloseAfterClick.bind(this);
 	}
 
 	clickHandler(e) {
@@ -23,6 +24,16 @@ class DropButton extends Component {
 		}
 	}
 
+	mobileCloseAfterClick() {
+		if (this.props.mobile) {
+			setTimeout(() => {
+				this.setState({
+					open: false
+				});
+			}, 500);
+		}
+	}
+
 	componentDidMount() {
 		document.addEventListener("click", this.clickHandler, false);
 	}
@@ -33,7 +44,7 @@ class DropButton extends Component {
 
 	render() {
 		const { open } = this.state;
-		const { name } = this.props;
+		const { name, mobile } = this.props;
 		const opacity = { opacity: open ? ".9" : ".6" };
 		const activeNavLink = { opacity: ".6" };
 
@@ -43,31 +54,49 @@ class DropButton extends Component {
 				ref={dropdown => (this.dropdown = dropdown)}
 			>
 				<div className="btn-dropdown-button" onClick={this.clickHandler}>
-					<p style={opacity}>
-						{name}
-						<i
-							className={open ? "fa fa-angle-up" : "fa fa-angle-down"}
-							aria-hidden="true"
-						/>
-					</p>
+					{mobile ? (
+						<p className="hamburger-button">
+							<i className="fa fa-bars" aria-hidden="true" />
+						</p>
+					) : (
+						<p style={opacity} className="desktop-button">
+							{name}
+							<i
+								className={open ? "fa fa-angle-up" : "fa fa-angle-down"}
+								aria-hidden="true"
+							/>
+						</p>
+					)}
 				</div>
 				{this.state.open ? (
 					<div className="btn-dropdown-dropdown">
 						<ul>
 							<li>
-								<NavLink to="/profile" activeStyle={activeNavLink}>
+								<NavLink
+									to="/profile"
+									activeStyle={activeNavLink}
+									onClick={this.mobileCloseAfterClick}
+								>
 									My Profile
 								</NavLink>
 								<hr className="stick" />
 							</li>
 							<li>
-								<NavLink to="/settings" activeStyle={activeNavLink}>
+								<NavLink
+									to="/settings"
+									activeStyle={activeNavLink}
+									onClick={this.mobileCloseAfterClick}
+								>
 									Settings
 								</NavLink>
 								<hr className="stick" />
 							</li>
 							<li>
-								<NavLink to="/logout" activeStyle={activeNavLink}>
+								<NavLink
+									to="/logout"
+									activeStyle={activeNavLink}
+									onClick={this.mobileCloseAfterClick}
+								>
 									Logout
 								</NavLink>
 							</li>
