@@ -1,0 +1,12 @@
+.footer {
+  min-height: 116px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 24px;
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    .right {
+      margin-left: auto;
+    }
+  }
+}
