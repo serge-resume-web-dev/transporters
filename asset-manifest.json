@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/transporters/static/css/main.63ea42d6.chunk.css",
+    "main.js": "/transporters/static/js/main.fbf2eeb7.chunk.js",
+    "main.js.map": "/transporters/static/js/main.fbf2eeb7.chunk.js.map",
+    "runtime~main.js": "/transporters/static/js/runtime~main.47488c10.js",
+    "runtime~main.js.map": "/transporters/static/js/runtime~main.47488c10.js.map",
+    "static/css/2.510409cd.chunk.css": "/transporters/static/css/2.510409cd.chunk.css",
+    "static/js/2.69f7f93b.chunk.js": "/transporters/static/js/2.69f7f93b.chunk.js",
+    "static/js/2.69f7f93b.chunk.js.map": "/transporters/static/js/2.69f7f93b.chunk.js.map",
+    "index.html": "/transporters/index.html",
+    "precache-manifest.294494a1f197d8e7d857f8e4af2e35c9.js": "/transporters/precache-manifest.294494a1f197d8e7d857f8e4af2e35c9.js",
+    "service-worker.js": "/transporters/service-worker.js",
+    "static/css/2.510409cd.chunk.css.map": "/transporters/static/css/2.510409cd.chunk.css.map",
+    "static/css/main.63ea42d6.chunk.css.map": "/transporters/static/css/main.63ea42d6.chunk.css.map",
+    "static/media/Intro.scss": "/transporters/static/media/cargo.ebbc0925.jpg"
+  }
+}
