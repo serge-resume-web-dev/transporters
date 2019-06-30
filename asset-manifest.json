@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.549c424e.chunk.css",
-    "main.js": "/static/js/main.fbf2eeb7.chunk.js",
-    "main.js.map": "/static/js/main.fbf2eeb7.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.510409cd.chunk.css": "/static/css/2.510409cd.chunk.css",
-    "static/js/2.69f7f93b.chunk.js": "/static/js/2.69f7f93b.chunk.js",
-    "static/js/2.69f7f93b.chunk.js.map": "/static/js/2.69f7f93b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f6703e79637bb1a48da6a128a48d0df1.js": "/precache-manifest.f6703e79637bb1a48da6a128a48d0df1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.510409cd.chunk.css.map": "/static/css/2.510409cd.chunk.css.map",
-    "static/css/main.549c424e.chunk.css.map": "/static/css/main.549c424e.chunk.css.map",
-    "static/media/Intro.scss": "/static/media/cargo.ebbc0925.jpg"
+    "main.css": "/location/static/css/main.12dfb0c0.chunk.css",
+    "main.js": "/location/static/js/main.fbf2eeb7.chunk.js",
+    "main.js.map": "/location/static/js/main.fbf2eeb7.chunk.js.map",
+    "runtime~main.js": "/location/static/js/runtime~main.44e3386f.js",
+    "runtime~main.js.map": "/location/static/js/runtime~main.44e3386f.js.map",
+    "static/css/2.510409cd.chunk.css": "/location/static/css/2.510409cd.chunk.css",
+    "static/js/2.69f7f93b.chunk.js": "/location/static/js/2.69f7f93b.chunk.js",
+    "static/js/2.69f7f93b.chunk.js.map": "/location/static/js/2.69f7f93b.chunk.js.map",
+    "index.html": "/location/index.html",
+    "precache-manifest.8ea90271c48627ee3935441655304df9.js": "/location/precache-manifest.8ea90271c48627ee3935441655304df9.js",
+    "service-worker.js": "/location/service-worker.js",
+    "static/css/2.510409cd.chunk.css.map": "/location/static/css/2.510409cd.chunk.css.map",
+    "static/css/main.12dfb0c0.chunk.css.map": "/location/static/css/main.12dfb0c0.chunk.css.map",
+    "static/media/Intro.scss": "/location/static/media/cargo.ebbc0925.jpg"
   }
 }
