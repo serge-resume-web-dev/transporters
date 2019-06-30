@@ -7,7 +7,15 @@ const Settings = () => {
 
 	useEffect(() => {
 		async function fetchUsers() {
-			const response = await fetch(url);
+			const response = await fetch(url, {
+				mode: "no-cors", // no-cors, cors, *same-origin
+				cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+				credentials: "omit", // include, *same-origin, omit
+				headers: {
+					"Content-Type": "application/json"
+					// 'Content-Type': 'application/x-www-form-urlencoded',
+				}
+			});
 			response
 				.json()
 				.then(response => setData(response))
