@@ -5,14 +5,26 @@
 .location-navbar {
   margin-left: auto;
   width: 275px;
+  @include xs-screens {
+    width: 100%;
+  }
   ul {
     list-style: none;
     margin: 0;
-    padding: o;
+    padding: 0;
+    @include xs-screens {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
     li {
       display: block;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       padding: 16px 0;
+      @include xs-screens {
+        margin-right: 12px;
+        border-bottom: none;
+      }
       a {
         color: $black;
         font-size: 18px;

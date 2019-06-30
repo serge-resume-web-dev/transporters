@@ -1,5 +1,14 @@
+@import "./../../../../styles/functions";
+@import "./../../../../styles/variables";
+@import "./../../../../styles/mixins";
+
 .location-article {
   max-width: 741px;
+  padding-right: 12px;
+  @include xs-screens {
+    order: 2;
+    padding-right: 0;
+  }
   h2 {
     font-size: 48px;
     font-weight: bold;
