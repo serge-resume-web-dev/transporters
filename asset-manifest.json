@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/location/static/css/main.12dfb0c0.chunk.css",
-    "main.js": "/location/static/js/main.fbf2eeb7.chunk.js",
-    "main.js.map": "/location/static/js/main.fbf2eeb7.chunk.js.map",
-    "runtime~main.js": "/location/static/js/runtime~main.44e3386f.js",
-    "runtime~main.js.map": "/location/static/js/runtime~main.44e3386f.js.map",
-    "static/css/2.510409cd.chunk.css": "/location/static/css/2.510409cd.chunk.css",
-    "static/js/2.69f7f93b.chunk.js": "/location/static/js/2.69f7f93b.chunk.js",
-    "static/js/2.69f7f93b.chunk.js.map": "/location/static/js/2.69f7f93b.chunk.js.map",
-    "index.html": "/location/index.html",
-    "precache-manifest.8ea90271c48627ee3935441655304df9.js": "/location/precache-manifest.8ea90271c48627ee3935441655304df9.js",
-    "service-worker.js": "/location/service-worker.js",
-    "static/css/2.510409cd.chunk.css.map": "/location/static/css/2.510409cd.chunk.css.map",
-    "static/css/main.12dfb0c0.chunk.css.map": "/location/static/css/main.12dfb0c0.chunk.css.map",
-    "static/media/Intro.scss": "/location/static/media/cargo.ebbc0925.jpg"
+    "main.css": "/transporters/static/css/main.63ea42d6.chunk.css",
+    "main.js": "/transporters/static/js/main.fbf2eeb7.chunk.js",
+    "main.js.map": "/transporters/static/js/main.fbf2eeb7.chunk.js.map",
+    "runtime~main.js": "/transporters/static/js/runtime~main.47488c10.js",
+    "runtime~main.js.map": "/transporters/static/js/runtime~main.47488c10.js.map",
+    "static/css/2.510409cd.chunk.css": "/transporters/static/css/2.510409cd.chunk.css",
+    "static/js/2.69f7f93b.chunk.js": "/transporters/static/js/2.69f7f93b.chunk.js",
+    "static/js/2.69f7f93b.chunk.js.map": "/transporters/static/js/2.69f7f93b.chunk.js.map",
+    "index.html": "/transporters/index.html",
+    "precache-manifest.294494a1f197d8e7d857f8e4af2e35c9.js": "/transporters/precache-manifest.294494a1f197d8e7d857f8e4af2e35c9.js",
+    "service-worker.js": "/transporters/service-worker.js",
+    "static/css/2.510409cd.chunk.css.map": "/transporters/static/css/2.510409cd.chunk.css.map",
+    "static/css/main.63ea42d6.chunk.css.map": "/transporters/static/css/main.63ea42d6.chunk.css.map",
+    "static/media/Intro.scss": "/transporters/static/media/cargo.ebbc0925.jpg"
   }
 }
