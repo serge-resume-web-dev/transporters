@@ -1,0 +1,85 @@
+[debug] [2019-06-30T18:23:42.767Z] ----------------------------------------------------------------------
+[debug] [2019-06-30T18:23:42.770Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-06-30T18:23:42.770Z] CLI Version:   7.0.2
+[debug] [2019-06-30T18:23:42.770Z] Platform:      win32
+[debug] [2019-06-30T18:23:42.770Z] Node Version:  v10.16.0
+[debug] [2019-06-30T18:23:42.771Z] Time:          Sun Jun 30 2019 21:23:42 GMT+0300 (Eastern European Summer Time)
+[debug] [2019-06-30T18:23:42.771Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-30T18:23:42.782Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-30T18:23:42.782Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Serge\Documents\Development\cargo-react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2019-06-30T18:45:12.427Z] ----------------------------------------------------------------------
+[debug] [2019-06-30T18:45:12.430Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-06-30T18:45:12.430Z] CLI Version:   7.0.2
+[debug] [2019-06-30T18:45:12.431Z] Platform:      win32
+[debug] [2019-06-30T18:45:12.431Z] Node Version:  v10.16.0
+[debug] [2019-06-30T18:45:12.432Z] Time:          Sun Jun 30 2019 21:45:12 GMT+0300 (Eastern European Summer Time)
+[debug] [2019-06-30T18:45:12.432Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-30T18:45:12.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-30T18:45:12.446Z] > authorizing via signed-in user
+[debug] [2019-06-30T18:45:12.446Z] [iam] checking project cargo-transporters-b55e6 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-06-30T18:45:12.448Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-30T18:45:12.449Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-30T18:45:12.613Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-30T18:45:12.623Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cargo-transporters-b55e6:testIamPermissions  
+
+[debug] [2019-06-30T18:45:13.576Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-30T18:45:13.578Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cargo-transporters-b55e6  
+ 
+[debug] [2019-06-30T18:45:13.833Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'cargo-transporters-b55e6'...
+[info] 
+[info] i  deploying database, hosting
+[debug] [2019-06-30T18:45:13.839Z] TypeError: rulesConfig.forEach is not a function
+    at module.exports (C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\database\prepare.js:20:17)
+    at _chain (C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:22:40)
+    at C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:63:16
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-06-30T18:45:46.310Z] ----------------------------------------------------------------------
+[debug] [2019-06-30T18:45:46.312Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-06-30T18:45:46.312Z] CLI Version:   7.0.2
+[debug] [2019-06-30T18:45:46.312Z] Platform:      win32
+[debug] [2019-06-30T18:45:46.312Z] Node Version:  v10.16.0
+[debug] [2019-06-30T18:45:46.314Z] Time:          Sun Jun 30 2019 21:45:46 GMT+0300 (Eastern European Summer Time)
+[debug] [2019-06-30T18:45:46.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-30T18:45:46.324Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-30T18:45:46.324Z] > authorizing via signed-in user
+[debug] [2019-06-30T18:45:46.325Z] [iam] checking project cargo-transporters-b55e6 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-06-30T18:45:46.326Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cargo-transporters-b55e6:testIamPermissions  
+
+[debug] [2019-06-30T18:45:47.296Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-30T18:45:47.299Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cargo-transporters-b55e6  
+ 
+[debug] [2019-06-30T18:45:47.605Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'cargo-transporters-b55e6'...
+[info] 
+[info] i  deploying database, hosting
+[debug] [2019-06-30T18:45:47.610Z] TypeError: rulesConfig.forEach is not a function
+    at module.exports (C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\database\prepare.js:20:17)
+    at _chain (C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:22:40)
+    at C:\Users\Serge\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:63:16
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
