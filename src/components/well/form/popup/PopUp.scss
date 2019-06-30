@@ -20,14 +20,24 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 222px;
-  left: 476px;
+  top: 20%;
+  left: 30%;
   z-index: 2;
+  @include xs-screens {
+    left: 20%;
+  }
+  @include small-xs-screens {
+    left: 10%;
+    width: 250px;
+  }
   .item {
     text-align: center;
     .fa-exclamation-circle {
       font-size: 96px;
       color: red;
+      @include small-xs-screens {
+        font-size: 60px;
+      }
     }
   }
   .button-close {
@@ -43,11 +53,17 @@
     line-height: 1.33;
     letter-spacing: -0.12px;
     color: $black;
+    @include small-xs-screens {
+      font-size: 18px;
+    }
   }
   p {
     font-size: 18px;
     line-height: 1.33;
     color: $black;
     padding: 0 12px;
+    @include small-xs-screens {
+      font-size: 14px;
+    }
   }
 }

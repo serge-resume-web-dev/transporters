@@ -45,7 +45,7 @@ class DropButton extends Component {
 	render() {
 		const { open } = this.state;
 		const { name, mobile } = this.props;
-		const opacity = { opacity: open ? ".9" : ".6" };
+		const opacity = { opacity: open ? ".9" : null };
 		const activeNavLink = { opacity: ".6" };
 
 		return (

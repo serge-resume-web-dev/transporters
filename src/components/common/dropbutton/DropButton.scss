@@ -3,6 +3,7 @@
 @import "./../../styles/mixins";
 
 .btn-dropdown {
+  margin-top: 6px;
   width: 175px;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,6 @@
     .desktop-button {
       min-width: 109px;
       height: 24px;
-      opacity: 0.6;
       line-height: 1.33;
       letter-spacing: -0.09px;
       text-align: right;
@@ -27,6 +27,9 @@
         font-size: 14px;
         color: $black;
         margin: 0 5px;
+      }
+      &:hover {
+        opacity: 0.6;
       }
     }
     .hamburger-button {
@@ -55,6 +58,8 @@
         a {
           color: $black;
           font-weight: bold;
+          display: inline-block;
+          width: 100%;
           &:hover {
             text-decoration: none;
             opacity: 0.6;
